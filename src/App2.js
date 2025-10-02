@@ -1,12 +1,14 @@
 import './index.css'
 import ComponentHeader from './view/ComponentHeader';
+import { useCounterViewModel } from './viewmodel/blockchainViewModel';
 
 
 
 function App() {
+  const wallet = useCounterViewModel();
   return (
     <div className="App">
-      <ComponentHeader />
+      <ComponentHeader  wallet={wallet} />
     </div>
   );
 }

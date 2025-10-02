@@ -65,12 +65,7 @@ export const useCounterViewModel = () => {
   }, [model]);
 
   return {
-    balance,
-    address,
-    isConnected,
-    isConnecting,
-    connectWallet,
-    disconnect,
-    formatBalance,
+    state: { balance, address, isConnected, isConnecting },
+    actions: { connectWallet, disconnect, formatBalance }
   };
 };
