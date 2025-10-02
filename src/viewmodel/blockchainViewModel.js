@@ -1,6 +1,6 @@
 import Web3 from 'web3';
 import { useState, useEffect, useCallback } from 'react';
-import { BlockChainModel } from '../request/BlockChainRequest';
+import { BlockChainModel } from '../model/BlockChainModel';
 
 let web3;
 if (window.ethereum) {
